@@ -1,0 +1,6 @@
+---
+# defaults file for initial-packages
+initial_packages:
+  - acl
+  - vim
+  - curl

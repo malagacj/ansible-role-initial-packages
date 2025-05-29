@@ -1,0 +1,13 @@
+---
+# tasks file for initial-packages
+- name: Install initial packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ initial_packages }}"
+
+- name: Install extra initial packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ initial_packages_extra }}"
